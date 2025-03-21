@@ -29,12 +29,18 @@
 
 快速浏览效果：[查看sample.pdf](./sample.pdf)，样例论文源码：[查看sample.typ](./sample.typ)
 
-### 本地编辑（推荐）
+### 使用 Visual Studio Code 本地编辑（推荐）
+
+1. 下载[`Tinymist Typst`](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)插件可以实现语法提示以及实时预览( Ctrl+K V 或者直接在文件下方点击preview)
+2. clone 本仓库
+3. 按本仓库中的 sample.typ 照葫芦画瓢即可，sample.typ 既是样例也是说明书
+
+### 本地编辑
 
 1. 下载对应平台的 typst：https://github.com/typst/typst/releases 记得先看看它的 README
 2. clone 本仓库
 3. 按本仓库中的 sample.typ 照葫芦画瓢即可，sample.typ 既是样例也是说明书
-4. 在本项目目录里，命令行执行 `typst watch xxx.typ` 的命令即可编译同名 pdf 文件，而且一旦更新就会增量编译，推荐在 VSCode 中编辑，下载 `Typst LSP` 插件获得语法提示，使用 [`Typst Preview`](https://github.com/enter-tainer/typst-preview-vscode) 插件可以实现文本和预览之间的快速跳转与实时预览。
+4. 在本项目目录里，命令行执行 `typst watch xxx.typ` 的命令即可编译同名 pdf 文件，而且一旦更新就会增量编译。
 
 
 ### 线上编辑（不推荐）
