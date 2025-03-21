@@ -14,7 +14,7 @@
 #import "pages/appendix.typ": *
 
 #import "utilities/three-line-table.typ": three_line_table
-#import "utilities/indent-funs.typ": *
+// #import "utilities/indent-funs.typ": *
 #import "utilities/bib-cite.typ": *
 #import "utilities/set-heading.typ": _set_heading
 #import "utilities/set-figure.typ": _set_figure
@@ -48,7 +48,7 @@
   // 参考文献
   show: _set_references.with(csl_style: "hust-cse-ug.csl")
   // 修复缩进
-  show: _fix_indent
+  // show: _fix_indent
   // 整体页面设置
   show: _set_paper_page_size
   // 修复中文粗体不能正确显示的问题

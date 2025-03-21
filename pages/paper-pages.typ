@@ -16,8 +16,10 @@
 // 页面布局
 #let _set_paper_page_par(body) = {
     set text(font: songti, 12pt)
-    set par(justify: true, leading: 1.24em, first-line-indent: 2em)
-    set par(spacing: 1.24em)
+    set par(justify: true, leading: 1.24em, first-line-indent: (amount: 2em , all: true), spacing: 1.24em)
+    
+    // set par(justify: true, leading: 1.24em,  first-line-indent: 2em)
+    // set par(spacing: 1.24em)
 
     body
 }
