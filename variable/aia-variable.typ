@@ -39,7 +39,7 @@
     #text(weight: "bold", font: heiti, size: 12pt)[
       Key Words: 
     ]
-    #keywords.join(", ")
+    #keywords.join(";")
   ]
 }
 
