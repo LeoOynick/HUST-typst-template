@@ -1,4 +1,5 @@
 #import "../fonts/font-def.typ": *
+#import "@preview/tablem:0.2.0": tablem, three-line-table
 #import "../utilities/indent-funs.typ": empty_par
 
 // aia院风格中文摘要
@@ -39,7 +40,7 @@
     #text(weight: "bold", font: heiti, size: 12pt)[
       Key Words: 
     ]
-    #keywords.join(";")
+    #keywords.join("; ")
   ]
 }
 
