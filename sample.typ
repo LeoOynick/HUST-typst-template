@@ -6,7 +6,7 @@
 
 #let algorithm = algorithm.with(supplement: "算法")
 
-
+#set enum(numbering: n => text(12.5pt,baseline: 0.5pt)[#n.])  // 中文数字列表对齐
 
 #show: project.with(
   anonymous: false,
@@ -267,7 +267,7 @@ reference link: https://typst.app/universe/package/lovelace
 
 == 文献引用
 
-引用支持 LaTeX Bib 的格式，也支持更简单好看的 yml 来配置（尚未流行，推荐优先使用`.bib`）在引用时使用`#bib_cite(<tag>)`，像这样#bib_cite(<impagliazzo2001problems>,<Burckhardt:2013>)以获得右上的引用标注#bib_cite(<刘星2014恶意代码的函数调用图相似性分析>)#bib_cite(<papadimitriou1998combinatorial>)。
+// 引用支持 LaTeX Bib 的格式，也支持更简单好看的 yml 来配置（尚未流行，推荐优先使用`.bib`）在引用时使用`#bib_cite(<tag>)`，像这样#bib_cite(<impagliazzo2001problems>,<Burckhardt:2013>)以获得右上的引用标注#bib_cite(<刘星2014恶意代码的函数调用图相似性分析>)#bib_cite(<papadimitriou1998combinatorial>)。
 
 记得在最后加入\#references("path/to/ref.bib")函数的调用来生成参考文献。
 
