@@ -93,7 +93,7 @@
   pagebreak()
 
   // 目录
-  chinese_outline()
+  aia_chinese_outline()
 
   /* 正文 */
 
