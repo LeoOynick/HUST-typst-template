@@ -1,6 +1,6 @@
 // #import "cs-template.typ": *
-// #import "aia-template.typ": *
-#import "cse-template.typ": *
+#import "aia-template.typ": *
+// #import "cse-template.typ": *
 #import "@preview/codelst:2.0.2": sourcecode
 #show: setup-lovelace
 
@@ -120,40 +120,58 @@ typst 是最新最热的标记文本语言，定位与 LaTeX 类似，具有极�
   caption: "芝士样表"
 ) <tbl1>
 
+// #figure(
+//   three_line_table(
+//     (
+//     ("Country List", "Country List", "Country List"),
+//     ("Country Name or Area Name", "ISO ALPHA Code", "ISO ALPHA"),
+//     ("Afghanistan", "AF", "AFT"),
+//     ("Aland Islands", "AX", "ALA"),
+//     ("Albania", "AL", "ALB"),
+//     ("Algeria", "DZ", "DZA"),
+//     ("American Samoa", "AS", "ASM"),
+//     ("Andorra", "AD", "AND"),
+//     ("Angola", "AP", "AGO"),
+//   )),
+//   kind: table,
+//   caption: "三线表示例"
+// )
+
+// #figure(
+//   three_line_table(
+//     (
+//     ("Country List", "Country List", "Country List", "Country List"),
+//     ("Country Name or Area Name", "ISO ALPHA 2 Code", "ISO ALPHA 3", "8"),
+//     ("Afghanistan", "AF", "AFT", "7"),
+//     ("Aland Islands", "AX", "ALA", "6"),
+//     ("Albania", "AL", "ALB", "5"),
+//     ("Algeria", "DZ", "DZA", "4"),
+//     ("American Samoa", "AS", "ASM", "3"),
+//     ("Andorra", "AD", "AND", "2"),
+//     ("Angola", "AP", "AGO", "1"),
+//   )),
+//   kind: table,
+//   caption: "三线表示例2"
+// )
 #figure(
-  three_line_table(
-    (
-    ("Country List", "Country List", "Country List"),
-    ("Country Name or Area Name", "ISO ALPHA Code", "ISO ALPHA"),
-    ("Afghanistan", "AF", "AFT"),
-    ("Aland Islands", "AX", "ALA"),
-    ("Albania", "AL", "ALB"),
-    ("Algeria", "DZ", "DZA"),
-    ("American Samoa", "AS", "ASM"),
-    ("Andorra", "AD", "AND"),
-    ("Angola", "AP", "AGO"),
-  )),
-  kind: table,
-  caption: "三线表示例"
+  tablem[
+  | *Name* | *Location* | *Height* | *Score* |
+  | ------ | ---------- | -------- | ------- |
+  | John   | Second St. | 180 cm   | 5       |
+  | Wally  | Third Av.  | 160 cm   | 10      |
+],
+caption: "表 示例"
 )
 
 #figure(
-  three_line_table(
-    (
-    ("Country List", "Country List", "Country List", "Country List"),
-    ("Country Name or Area Name", "ISO ALPHA 2 Code", "ISO ALPHA 3", "8"),
-    ("Afghanistan", "AF", "AFT", "7"),
-    ("Aland Islands", "AX", "ALA", "6"),
-    ("Albania", "AL", "ALB", "5"),
-    ("Algeria", "DZ", "DZA", "4"),
-    ("American Samoa", "AS", "ASM", "3"),
-    ("Andorra", "AD", "AND", "2"),
-    ("Angola", "AP", "AGO", "1"),
-  )),
-  kind: table,
-  caption: "三线表示例2"
+  three-line-table[
+  | *Name* | *Location* | *Height* | *Score* |
+  | ------ | ---------- | -------- | ------- |
+  | John   | Second St. | 180 cm   | 5       |
+  | Wally  | Third Av.  | 160 cm   | 10      |
+],
+caption: "三线表示例"
 )
-
 
 == 公式
 

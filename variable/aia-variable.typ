@@ -2,6 +2,34 @@
 #import "@preview/tablem:0.2.0": tablem, three-line-table
 #import "../utilities/indent-funs.typ": empty_par
 
+#let _set_paper_page_size(body) = {
+    set page(paper: "a4", margin: (
+        top: 2.5cm,
+        bottom: 2cm,
+        left: 3cm,
+        right: 3cm
+    ))
+
+    body
+}
+// 页眉
+#let _set_paper_page_header(anonymous: false, body) = {
+    set page(
+        header: {
+        set text(font: songti, 10.5pt, baseline: 8pt, spacing: 6pt, weight: 600)
+        set align(center)
+        if not anonymous {
+            [华 中 科 技 大 学 毕 业 设 计 (论 文)]
+        } else {
+            [█████████████████████████]
+        }
+        
+        line(length: 100%, stroke: 0.7pt)
+        }
+    )
+
+    body
+}
 // aia院风格中文摘要
 #let aia_zh_abstract_page(abstract, keywords: ()) = {
   set heading(level: 1, numbering: none)
