@@ -56,7 +56,7 @@
         columns: (5fr, 1fr, 5fr),
         line(length: 100%, stroke: 0.7pt + color.rgb(90, 128, 184)),
         context {
-          text(font: songti, 10pt, baseline: -3pt, counter(page).display("I"))
+          text(font: songti, 10pt, baseline: -3pt, counter(page).display("I"), weight: "bold")
         },
         line(length: 100%, stroke: 0.7pt + color.rgb(90, 128, 184)),
       )
@@ -76,7 +76,7 @@
         columns: (5fr, 1fr, 5fr),
         line(length: 100%, stroke: 0.7pt + color.rgb(90, 128, 184)),
         context {
-          text(font: songti, 10pt, baseline: -3pt, counter(page).display("1"))
+          text(font: songti, 10pt, baseline: -3pt, counter(page).display("1"), weight: "bold")
         },
         line(length: 100%, stroke: 0.7pt + color.rgb(90, 128, 184)),
       )
